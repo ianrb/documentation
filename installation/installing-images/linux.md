@@ -20,7 +20,7 @@
 - In a terminal window, write the image to the card with the command below, making sure you replace the input file `if=` argument with the path to your `.img` file, and the `/dev/sdX` in the output file `of=` argument with the correct device name. **This is very important, as you will lose all the data on the hard drive if you provide the wrong device name.** Make sure the device name is the name of the whole SD card as described above, not just a partition. For example: `sdd`, not `sdds1` or `sddp1`; `mmcblk0`, not `mmcblk0p1`.
 
     ```bash
-    dd bs=4M if=2020-02-13-raspios-buster.img of=/dev/sdX conv=fsync
+    dd bs=4M if=2020-05-27-raspios-buster-armhf.img of=/dev/sdX conv=fsync
     ```
 
 - Please note that block size set to `4M` will work most of the time. If not,  try `1M`, although this will take considerably longer.
